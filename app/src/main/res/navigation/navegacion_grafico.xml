@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion_grafico"
+    app:startDestination="@id/tiempos_fragmentMenu">
+
+    <fragment
+        android:id="@+id/tiempos_fragmentMenu"
+        android:name="com.magove.tiempo.fragmants.tiempos_fragmentMenu"
+        android:label="fragment_tiempos_menu"
+        tools:layout="@layout/fragment_tiempos_menu" >
+        <action
+            android:id="@+id/action_tiempos_fragmentMenu_to_fragment_alta_Tiempos"
+            app:destination="@id/fragment_alta_Tiempos"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_tiempos_fragmentMenu_to_fragment_EnCurso_tiempos"
+            app:destination="@id/fragment_EnCurso_tiempos" />
+        <action
+            android:id="@+id/action_tiempos_fragmentMenu_to_fragment_Pausados"
+            app:destination="@id/fragment_Pausados" />
+        <action
+            android:id="@+id/action_tiempos_fragmentMenu_to_fragment_Detalles"
+            app:destination="@id/fragment_Detalles" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_alta_Tiempos"
+        android:name="com.magove.tiempo.fragmants.fragment_alta_Tiempos"
+        android:label="fragment_alta__tiempos"
+        tools:layout="@layout/fragment_alta__tiempos" />
+    <fragment
+        android:id="@+id/fragment_EnCurso_tiempos"
+        android:name="com.magove.tiempo.fragmants.Fragment_EnCurso_tiempos"
+        android:label="fragment__en_curso_tiempos"
+        tools:layout="@layout/fragment__en_curso_tiempos" />
+    <fragment
+        android:id="@+id/fragment_Pausados"
+        android:name="com.magove.tiempo.fragmants.Fragment_Pausados"
+        android:label="fragment__pausados"
+        tools:layout="@layout/fragment__pausados" />
+    <fragment
+        android:id="@+id/fragment_Detalles"
+        android:name="com.magove.tiempo.fragmants.Fragment_Detalles"
+        android:label="fragment__detalles"
+        tools:layout="@layout/fragment__detalles" />
+</navigation>

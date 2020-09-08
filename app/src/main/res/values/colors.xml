@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a51616</color>
+    <color name="colorPrimaryDark">#6f0000</color>
+    <color name="colorAccent">#dd4e3e</color>
+    <color name="titulos">#000</color>
+    <color name="letras">#fff</color>
+    <color name="boton_No_precionado">#607D8B</color>
+    <color name="boton_precionado">#757575</color>
+</resources>

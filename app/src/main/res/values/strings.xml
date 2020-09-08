@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tiempo</string>
+    <string name="menu">Menú principal</string>
+    <string name="tiempos">Tiempos</string>
+    <string name="busqueda">Busqueda</string>
+    <string name="buscar">Buscar</string>
+    <string name="proyectos">Proyectos</string>
+    <string name="alta">Alta</string>
+    <string name="en_curso">En curso</string>
+    <string name="pausados">Pausado</string>
+    <string name="detalles">Detalles</string>
+    <string name="codigo_proyecto">Código del proyecto</string>
+    <string name="codigo_maquina">Código de maquína</string>
+    <string name="selecciona_actividad">Selecciona actividad</string>
+    <string name="selecciona_empleado">Selecciona empleado</string>
+    <string name="selecciona_proyecto">Selecciona proyecto</string>
+    <string name="guarda">Guardar</string>
+    <string name="cancela">Cancelar</string>
+    <string name="puasado">Pausado</string>
+    <string name="terminado">Terminado</string>
+    <string name="alta_proyecto">Alta de proyectos</string>
+    <string name="reanudar">Reanudar</string>
+
+    <string name="ingresa">Ingresar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmants.fragment_alta_Tiempos" >
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/id_txtCodigoMaquina"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="@string/codigo_maquina"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="@+id/id_spProyectos"
+                app:layout_constraintTop_toBottomOf="@+id/id_spProyectos" />
+
+            <ImageButton
+                android:id="@+id/id_btnEmpleado"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/efecto_boton"
+                android:src="@drawable/skip_forward"
+                app:layout_constraintBottom_toBottomOf="@+id/id_SpEmpleado"
+                app:layout_constraintStart_toEndOf="@+id/id_SpEmpleado"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/selecciona_empleado"
+                android:textColor="@color/titulos"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/id_txtCodigoMaquina"
+                app:layout_constraintTop_toBottomOf="@+id/id_txtCodigoMaquina" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/selecciona_actividad"
+                android:textColor="@color/titulos"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/id_SpEmpleado"
+                app:layout_constraintTop_toBottomOf="@+id/id_SpEmpleado" />
+
+            <ImageButton
+                android:id="@+id/id_btnCodigo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/efecto_boton"
+                android:src="@drawable/barcode"
+                app:layout_constraintBottom_toBottomOf="@+id/id_txtCodigoMaquina"
+                app:layout_constraintStart_toEndOf="@+id/id_txtCodigoMaquina"
+                app:layout_constraintTop_toTopOf="@+id/id_txtCodigoMaquina"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/id_btnProyecto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/efecto_boton"
+                android:src="@drawable/barcode"
+                app:layout_constraintBottom_toBottomOf="@+id/id_spProyectos"
+                app:layout_constraintStart_toEndOf="@+id/id_spProyectos"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+            <Spinner
+                android:id="@+id/id_SpActividad"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <Spinner
+                android:id="@+id/id_SpEmpleado"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Spinner
+                android:id="@+id/id_spProyectos"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:text="@string/selecciona_proyecto"
+                android:textColor="@color/titulos"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="18dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/id_btnGuardar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/efecto_boton"
+        android:drawableStart="@drawable/content_save_settings"
+        android:text="@string/guarda"
+        android:textColor="@color/letras"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/id_btnCancelar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/efecto_boton"
+        android:drawableStart="@drawable/close_circle"
+        android:text="@string/cancela"
+        android:textColor="@color/letras"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

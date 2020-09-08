@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/id_btntimepos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/efecto_boton"
+        android:drawableTop="@drawable/account_clock"
+        android:onClick="ir_tiempos"
+        android:paddingTop="10dp"
+        android:text="@string/tiempos"
+        android:textColor="@color/letras"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/id_btnbusquedas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/efecto_boton"
+        android:drawableTop="@drawable/book_search"
+        android:paddingTop="10dp"
+        android:text="@string/busqueda"
+        android:textColor="@color/letras"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/id_btntimepos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/id_btntimepos"
+        app:layout_constraintTop_toBottomOf="@+id/id_btntimepos" />
+
+    <Button
+        android:id="@+id/id_btnProyectos"
+        android:layout_width="98dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/efecto_boton"
+        android:drawableTop="@drawable/tools"
+        android:onClick="ir_proyectos"
+        android:paddingTop="10dp"
+        android:text="@string/proyectos"
+        android:textColor="@color/letras"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/id_btnbusquedas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/id_btnbusquedas"
+        app:layout_constraintTop_toBottomOf="@+id/id_btnbusquedas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
