@@ -41,7 +41,7 @@ EditText txt_maquina;
 Spinner sp_empleado,sp_actividad,sp_proyecto;
 Button btn_guardar,btn_cancelar;
 ImageButton btn_maquina,btn_proyecto;
-
+    Modelos modl= new Modelos();
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -85,6 +85,7 @@ ImageButton btn_maquina,btn_proyecto;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_alta__tiempos, container, false);
     }
@@ -92,7 +93,7 @@ ImageButton btn_maquina,btn_proyecto;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        final Modelos m= new Modelos();
+
         request= Volley.newRequestQueue(getContext());
         txt_maquina=getActivity().findViewById(R.id.id_txtCodigoMaquina);
         sp_proyecto=getActivity().findViewById(R.id.id_spProyectos);
@@ -117,7 +118,7 @@ ImageButton btn_maquina,btn_proyecto;
             @Override
             public void onClick(View v) {
                 if (sp_proyecto.getSelectedItem()!=null){
-                    m.indice=2;
+                    modl.indice=2;
                     Toast.makeText(getActivity(),"item",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getActivity(),"Debe seleccionar un elemento",Toast.LENGTH_SHORT).show();
@@ -163,14 +164,14 @@ ImageButton btn_maquina,btn_proyecto;
     }
 
         public void consulta_indices(){
-       /* if (){
+        if (modl.indice==1){
 
-        }else if(){
+        }else if(modl.indice==2){
 
-        }else if (){
+        }else if (modl.indice==3){
 
         }
-*/
+
         }
 
 
