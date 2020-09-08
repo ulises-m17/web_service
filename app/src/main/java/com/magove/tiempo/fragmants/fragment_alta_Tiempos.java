@@ -41,7 +41,7 @@ EditText txt_maquina;
 Spinner sp_empleado,sp_actividad,sp_proyecto;
 Button btn_guardar,btn_cancelar;
 ImageButton btn_maquina,btn_proyecto;
-    Modelos modl= new Modelos();
+    Modelos m= new Modelos();
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -86,7 +86,6 @@ ImageButton btn_maquina,btn_proyecto;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
         return inflater.inflate(R.layout.fragment_alta__tiempos, container, false);
     }
 
@@ -118,7 +117,7 @@ ImageButton btn_maquina,btn_proyecto;
             @Override
             public void onClick(View v) {
                 if (sp_proyecto.getSelectedItem()!=null){
-                    modl.indice=2;
+                    m.indice=2;
                     Toast.makeText(getActivity(),"item",Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getActivity(),"Debe seleccionar un elemento",Toast.LENGTH_SHORT).show();
@@ -164,14 +163,14 @@ ImageButton btn_maquina,btn_proyecto;
     }
 
         public void consulta_indices(){
-        if (modl.indice==1){
+       /* if (){
 
-        }else if(modl.indice==2){
+        }else if(){
 
-        }else if (modl.indice==3){
+        }else if (){
 
         }
-
+*/
         }
 
 
